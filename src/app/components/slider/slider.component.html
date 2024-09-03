@@ -1,0 +1,21 @@
+<div class="slider">
+  <button class="slider-arrow left-arrow" (click)="prevSlide()">
+    &#10094;
+  </button>
+
+  <div class="slider-content">
+    <h2>{{ slides[currentSlide].title }}</h2>
+    <p>{{ slides[currentSlide].description }}</p>
+    <button class="slider-button">Learn More</button>
+  </div>
+
+  <img
+    [src]="slides[currentSlide].image"
+    alt="Slider Image"
+    class="slider-image"
+  />
+
+  <button class="slider-arrow right-arrow" (click)="nextSlide()">
+    &#10095;
+  </button>
+</div>
